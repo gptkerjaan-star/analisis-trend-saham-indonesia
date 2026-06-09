@@ -1,9 +1,3 @@
-import sys
-import os
-
-# Tambahkan root directory ke path
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-
 """
 Dashboard Streamlit untuk Analisis Trend Saham Indonesia
 """
@@ -11,10 +5,10 @@ Dashboard Streamlit untuk Analisis Trend Saham Indonesia
 import streamlit as st
 import pandas as pd
 import numpy as np
-from src.fetcher import SahamFetcher
-from src.analyzer import SahamAnalyzer
-from src.visualizer import SahamVisualizer
-from src.predictor import TrendPredictor
+from fetcher import SahamFetcher
+from analyzer import SahamAnalyzer
+from visualizer import SahamVisualizer
+from predictor import TrendPredictor
 import warnings
 
 warnings.filterwarnings('ignore')
